@@ -16,9 +16,8 @@ A production-quality, full-stack enterprise dashboard built with the **MERN stac
 ## 🚀 Live Demo
 
 | Service | URL |
-|---------|-----|
-| Frontend    | *Pending Deployment* |
-| Backend API | *Pending Deployment* |
+| Frontend    | [https://trackifypm.vercel.app/](https://trackifypm.vercel.app/) |
+| Backend API | *Hosted on Render.com* |
 
 **Demo credentials:**
 - Admin: create an account then set `role: "admin"` in MongoDB Atlas
