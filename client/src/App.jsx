@@ -1,5 +1,6 @@
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import { useSelector } from 'react-redux';
+import { Analytics } from '@vercel/analytics/react';
 import LoginPage from './pages/LoginPage';
 import SignupPage from './pages/SignupPage';
 import DashboardPage from './pages/DashboardPage';
@@ -14,6 +15,7 @@ function App() {
 
   return (
     <BrowserRouter>
+      <Analytics />
       <Routes>
         {/* Public routes */}
         <Route path="/login" element={!user ? <LoginPage /> : <Navigate to="/" replace />} />
