@@ -2,7 +2,7 @@
 
 <p align="left">
   <img src="https://img.shields.io/badge/MERN_Stack-JavaScript-yellow?style=for-the-badge&logo=javascript" alt="MERN Stack" />
-  <img src="https://img.shields.io/badge/React_18-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React" />
+  <img src="https://img.shields.io/badge/React_19-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React" />
   <img src="https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white" alt="Express" />
   <img src="https://img.shields.io/badge/Socket.io-010101?style=for-the-badge&logo=socket.io&logoColor=white" alt="Socket.io" />
 </p>
@@ -125,7 +125,7 @@ const TaskSchema = new mongoose.Schema({
 
 | Layer | Technology |
 |-------|-----------|
-| Frontend | React 18, Vite, Redux Toolkit |
+| Frontend | React 19, Vite, Redux Toolkit |
 | Styling | Vanilla CSS (custom design system) |
 | Charts | Recharts |
 | Drag & Drop | @hello-pangea/dnd |
