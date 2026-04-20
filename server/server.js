@@ -35,6 +35,21 @@ app.use(cors({
 // Body parser
 app.use(express.json({ limit: '10kb' })); // Prevent massive payload attacks
 
+// Express 5.x compatibility hack for express-mongo-sanitize
+// Express 5 implements req.query as a strict getter which crashes the recursor.
+app.use((req, res, next) => {
+  if (req.query) {
+    const original = req.query;
+    Object.defineProperty(req, 'query', {
+      configurable: true,
+      enumerable: true,
+      writable: true,
+      value: { ...original }
+    });
+  }
+  next();
+});
+
 // Strip MongoDB operators from user input ($gt, $where, etc.)
 app.use(mongoSanitize());
 
